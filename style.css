@@ -1,81 +1,171 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+  
+}
 
 /* Header */
-#header{
-    background-color: #1F2833;
-    padding: 0.5%;
-    font-size: 21px;
-    position: fixed;
-    z-index: 3;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 #1F2833, 0 6px 20px 0 #1F2833;
+#header {
+  background-color: #1f2833;
+  font-size: 25px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  box-shadow: 0 3px 7px 0 #1f2833, 0 5px 15px 0 #1f2833;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-#header ul{
-    display: flex;
-    justify-content: space-evenly;
+#header ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.nav-item{
-    list-style-type: none;
+.nav-item {
+  list-style-type: none;
 }
-.nav-item a{
-    color: #66FCF1; 
+.nav-item a {
+  color: #66fcf1;
 }
+.nav-item a:hover {
+    text-decoration: none;
+  -webkit-animation: color-change 2s linear infinite alternate both;
+  animation: color-change 2s linear infinite alternate both;
+}
+@-webkit-keyframes color-change {
+  0% {
+    color: #66fcf1;
+  }
+  33.3333% {
+    color: #ffdbc5;
+  }
+  66.666% {
+    color: #ff9d76;
+  }
+  100% {
+    color: #ef4339;
+  }
+}
+@keyframes color-change {
+  0% {
+    color: #66fcf1;
+  }
+  33.3333% {
+    color: #ffdbc5;
+  }
+  66.666% {
+    color: #ff9d76;
+  }
+  100% {
+    color: #ef4339;
+  }
+}
+
 /* title */
-#title{
-    height: 100vh;
-    background-color: #1F2833;
-    /* background: url("./images/background.png");
-    background-position: 0% 0%;
-    background-size: 100% 100%;
-    background-attachment: fixed;                    
-    background-repeat:   no-repeat; */
-    text-align: center;
+#title {
+  height: 100vh;
+  background-color: hsl(213, 24%, 16%);
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.welcome-title{
-    color: #66FCF1;
-    position: relative;
-    z-index: 2;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    font-size: 3rem;
-    padding: 5%;
-    border-bottom-left-radius: 5rem;
-    border-top-right-radius: 5rem;
+
+.welcome-title {
+  color: #66fcf1;
+  position: relative;
+  z-index: 2;
+  top: 30%;
+  font-size: 6rem;
+}
+
+.box {
+  width: 8rem;
+  height: 8rem;
+  background-color: #66fcf1;
+  top: 60%;
+  border-radius: 4rem;
+  position: absolute;
+}
+
+#ball1 {
+  left: 44%;
+  top: 65%;
+  -webkit-animation: color-change-4x 5.5s linear infinite alternate both;
+  animation: color-change-4x 5.5s linear infinite alternate both;
+}
+
+#ball2 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 65%;
+  -webkit-animation: color-change-4x 6s linear infinite alternate both;
+  animation: color-change-4x 6s linear infinite alternate both;
+}
+#ball3 {
+  right: 44%;
+  top: 65%;
+  -webkit-animation: color-change-4x 6.5s linear infinite alternate both;
+  animation: color-change-4x 6.5s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-4x {
+  0% {
+    background: #66fcf1;
+  }
+  33.3333% {
+    background: #4b7fb3;
+  }
+  66.666% {
+    background: #27496d;
+  }
+  100% {
+    background: #142850;
+  }
+}
+@keyframes color-change-4x {
+  0% {
+    background: #66fcf1;
+  }
+  33.3333% {
+    background: #4b7fb3;
+  }
+  66.666% {
+    background: #27496d;
+  }
+  100% {
+    background: #142850;
+  }
 }
 
 /* About */
-#about{
-    text-align: center;
-    background-color: #66FCF1;
-    height: fit-content;
-    font-size: 1.5rem;
-    color: #1F2833;
+#about {
+  text-align: center;
+  background-color: #66fcf1;
+  height: fit-content;
+  font-size: 1.5rem;
+  color: #1f2833;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-#about-me-title{
-    padding: 3%;
+#about-me-title {
+  padding: 3%;
 }
-.my-content{
-    padding: 3%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.skills{
-    padding: 3%;
+.my-content {
+  padding: 3%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.skills ul{
-    display: flex;
-    justify-content: space-evenly;
-    order: 5;
-}
-.skills li{
-    list-style-type: none;
-    padding: 0;
+.skills {
+  padding: 3%;
 }
 
+.skills ul {
+  display: flex;
+  justify-content: space-evenly;
+  order: 5;
+}
+.skills li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
