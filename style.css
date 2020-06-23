@@ -139,11 +139,17 @@ html {
 /* About */
 #about {
   text-align: center;
-  background-color: #66fcf1;
+  background-color: #142850;
   height: fit-content;
-  font-size: 1.5rem;
-  color: #1f2833;
+  font-size: 1.6rem;
+  color: #66fcf1;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#about img{
+    width: 250px;
+    height: 320px;
+    margin-bottom: 3%;
+    border-radius: 2rem;
 }
 #about-me-title {
   padding: 3%;
@@ -153,6 +159,19 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.me-text{
+    font-size: 1.8rem;
+    padding: 6%;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #142850 50%, #66fcf1 50%);
+    transition: background-position 1s linear, color 1s linear;
+    color: 66fcf1;
+    border-radius: 4rem;
+}
+.me-text:hover{
+    background-position: -100% 0;
+    color: #142850;
 }
 
 .skills {
@@ -169,3 +188,74 @@ html {
   padding: 0;
   width: 100%;
 }
+#resume-link{
+    text-decoration: none;
+    color: #66fcf1;
+    border: solid 4px #66fcf1;
+    padding: 1%;
+    border-radius: 1rem;
+    margin: 1%;
+    text-align: center;
+}
+#resume-link:hover{
+    transition: all 1.5s;
+    background-color: black;
+    color: white;
+}
+
+#work{
+    text-align: center;
+    background-color: #27496d;
+    height: fit-content;
+    font-size: 1.6rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#my-work-title{
+    color: #66fcf1;
+    padding: 3%;
+}
+
+.projects{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    font-size: 1.2rem;
+    margin: 2%;
+}
+.card a{
+    color: #1f2833;
+    margin: 1%;
+}
+.card a:hover{
+    color: red;
+}
+
+/* contact */
+#contact{
+    text-align: center;
+  background-color: #142850;
+  height: fit-content;
+  font-size: 3rem;
+  color: #66fcf1;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding: 2%;
+}
+
+#contact a{
+    color: white;
+    text-decoration: none;
+}
+#contact a:hover{
+    color: #66fcf1;
+    text-decoration: none;
+}
+
+#contact li{
+    list-style-type: none;
+}
+
