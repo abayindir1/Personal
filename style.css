@@ -259,3 +259,8 @@ html {
     list-style-type: none;
 }
 
+@media only screen and (max-width: 375px) {
+    .box{
+        display: none;
+    }
+  }
