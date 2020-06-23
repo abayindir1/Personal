@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Header */
+#header{
+    background-color: #1F2833;
+    padding: 0.5%;
+    font-size: 21px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 #1F2833, 0 6px 20px 0 #1F2833;
+}
+#header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    list-style-type: none;
+}
+.nav-item a{
+    color: #66FCF1; 
+}
+/* title */
+#title{
+    height: 100vh;
+    background-color: #1F2833;
+    /* background: url("./images/background.png");
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+    background-attachment: fixed;                    
+    background-repeat:   no-repeat; */
+    text-align: center;
+}
+.welcome-title{
+    color: #66FCF1;
+    position: relative;
+    z-index: 2;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 3rem;
+    padding: 5%;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+/* About */
+#about{
+    text-align: center;
+    background-color: #66FCF1;
+    height: fit-content;
+    font-size: 1.5rem;
+    color: #1F2833;
+}
+#about-me-title{
+    padding: 3%;
+}
+.my-content{
+    padding: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills{
+    padding: 3%;
+}
+
+.skills ul{
+    display: flex;
+    justify-content: space-evenly;
+    order: 5;
+}
+.skills li{
+    list-style-type: none;
+    padding: 0;
+}
+

@@ -18,22 +18,21 @@
   <body>
     <header id="header">
       <ul>
-        <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item nav-link"><a href="#about" >About me</a></li>
+        <li class="nav-item nav-link"><a href="#work" >Work</a></li>
+        <li class="nav-item nav-link"><a href="#contact" >Contact</a></li>
       </ul>
     </header>
 
     <div id="title">
-      <h1>Welcome</h1>
-      <h3>I am Abdullah</h3>
+            <h1 class="welcome-title">Welcome <br/> I am Abdullah</h1>
     </div>
 
     <div id="about">
       <div class="container">
         <h1 id="about-me-title" data-aos="zoom-in-down">About Me</h1>
-        <div class="row">
-          <div class="col-3">
+        <div class="row my-content">
+          <div class="col-12">
             <img
               src="./images/apbo.png"
               width="250px"
@@ -41,33 +40,38 @@
               alt="me"
             />
           </div>
-          <div class="col-9">
-            <p>
+          <div class="col-12">
+            <p class="card-text">
               I am a passionate web developer who continuously learns. I like to
               use my skills to built and design websites. I have enthusiasm for
               building responsive and elegant projects with future friendly web
               technologies. Other than computers and codes, I am a book reader
-              and a soccer fan.
+              and a soccer fan. Also, I am a bilingual person.
             </p>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-12">
-            <h3>Technologies I Use</h3>
+          <div class="col-12 skills">
+              <table>
+            <h3>Technologies I use</h3>
+             <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>React.js</li>
+             </ul>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>NodeJs</li>
-              <li>jQuery</li>
-              <li>Bootstrap</li>
-              <li>React.js</li>
+                <li>NodeJs</li>
+            <li>Express</li>
               <li>Heroku</li>
               <li>Git</li>
               <li>MySQL</li>
               <li>MongoDB</li>
             </ul>
+        </table>
           </div>
         </div>
         <a
@@ -228,7 +232,7 @@
         </ul>
     </div>
 
-    <a href="#header"><i class="fas fa-arrow-circle-up"></i></a>
+    <a href="#title"><i class="fas fa-arrow-circle-up"></i></a>
   </body>
   <script>
     AOS.init();
